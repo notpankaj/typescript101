@@ -1,0 +1,23 @@
+## COMPILING
+$ tsc filename   //one time
+$ tsc --watch filename //contine..till ctrl+c
+
+## CONFIG SETUP
+by default it will compile down to ES5, but we can change it in config
+
+$ tsc --init   // genrates tsconfig.json
+seting ES6 as default,
+{"compilerOptions": {"target":"es6"}}
+        -OR-
+$ tsc index --target es6
+
+
+## FOLDER STRUCTURE
+
+in config
+    "rootDir": "./src",   // our ts files they will be compiled
+    "outDir": "./dist",   // our js files that are compiled
+
+
+// REACT
+npx create-react-app ts_x_react --template typescript
